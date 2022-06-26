@@ -4,7 +4,7 @@ English | [日本語](./index.html?lang=ja)
 
 [GitHub Copilot](https://github.com/features/copilot/) is an AI-powered pair programmer. When you write a piece of code or a comment, it automatically generates the code that follows.
 
-This article uses Copilot and [p5.js](https://p5js.org/) to create [generative art](https://en.wikipedia.org/wiki/Generative_art). I will use Copilot's features and implement them with as little code as possible from me. In doing so, I want to see what Copilot can do and learn how to use it.
+This article uses Copilot and [p5.js](https://p5js.org/) to create [generative art](https://en.wikipedia.org/wiki/Generative_art). Using Copilot's functionality, I will implement the p5.js sketch with as little code as possible from me. In doing so, I want to see what Copilot can do and learn how to use it.
 
 Note: GitHub Copilot suggests different codes each time. Even under the same conditions, different codes may be proposed. Therefore, even if you enter the source code as described in this article, the result will not be the same.
 
@@ -30,17 +30,17 @@ The proposed code is displayed on the right. The code for the sketch of the ball
 
 ### Create another work
 
-As expected, the resulting work is uniform. Without human cooperation, it is impossible to create a variety of works of art.
+As expected, the resulting work is uniform and uninteresting. Without human cooperation, it is impossible to create a variety of works of art.
 
 (src_silent) [before_function_to_update.ts](./src/before_function_to_update.ts)
 
 (src) [function_to_update.ts](./src/function_to_update.ts)
 
-First, manually move the `setup` and `update` functions to the top level of the code. After this, we will add the code suggested by Copilot to these functions.
+First, manually move the `setup` and `update` functions to the top level of the code. After this, I will add the code suggested by Copilot to these functions.
 
 <br><br><br><br>
 
-Then have Copilot suggest the code following `p.background(0);`.
+Let Copilot suggest the code that follows `p.background(0)`.
 
 (src) [hello_world.ts](./src/hello_world.ts)
 
@@ -72,9 +72,9 @@ In Copilot, you can tell the intent of the code by defining the type of the obje
 
 (src) [define_types.ts](./src/define_types.ts)
 
-A person needs to enter only `type Point`. The rest of the code is automatically suggested. Similarly, one only needs to enter `type MovingPoint`, `type MovingLine`, and their definitions will be automatically suggested.
+I needed to enter only `type Point`. The rest of the code is automatically suggested. Similarly, Just enter `type MovingPoint` and `type MovingLine` and their definitions will be automatically suggested.
 
-Also, define a `movingLines` variable with `type MovingLine`. You only need to input `let movingLines` in the same way.
+Also, define a `movingLines` variable with `type MovingLine`. Just enter `let movingLines` in the same way.
 
 <br><br><br><br>
 
@@ -167,7 +167,7 @@ By using Copilot, I was able to create a program with very little code, just wri
 
 Was this coding with Copilot efficient? To have Copilot generate appropriate code for the comments, it is necessary to devise the wording of the comments and the naming of variables and types. This is an unnecessary effort in normal coding, and the efficiency is likely to be reduced because of it. There is also an increase in efficiency due to code generation. But taken as a whole, the increase in efficiency may be limited.
 
-Codes that are easy for Copilot to understand are those with appropriate naming and comments and are also easy for people to understand. There are advantages to coding with Copilot in terms of learning proper coding conventions.
+Code that is easy for Copilot to understand is code that is appropriately named and commented. It is also a code that is easy for people to understand. There are advantages to coding with Copilot in terms of learning proper coding conventions.
 
 Copilot can suggest unexpected codes that one may not have intended. In the implementation of generative art, this unexpectedness may be well utilized to broaden the scope of the work.
 
