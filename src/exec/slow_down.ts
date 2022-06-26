@@ -23,6 +23,7 @@ type MovingLine = {
 let movingLines: MovingLine[] = [];
 
 function setup() {
+  movingLines = [];
   p.createCanvas(400, 400);
   // Initialize first line
   const firstLine: MovingLine = {
