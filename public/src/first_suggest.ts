@@ -1,6 +1,6 @@
 import p5 from "p5";
 
-export default function sketch(p: p5) {
+export function sketch(p: p5) {
   let x = 0;
   let y = 0;
   let xspeed = 1;
