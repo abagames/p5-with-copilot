@@ -40,7 +40,7 @@
 
 <br><br><br><br>
 
-そして`p.background(0);`に続くコードを提案させる。
+`p.background(0);`に続くコードを提させてみよう。
 
 (src) [hello_world.ts](./src/hello_world.ts)
 
